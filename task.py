@@ -111,19 +111,19 @@ oil_prices = [
 # Average Price(2018-2020):
 # -----------------------------------
 
-# print("-"*50)
-# for oil in oil_prices:
-#     print(f"Oil Type: {oil.get('oil_type').capitalize()}")
-#     prices = oil.get("prices")
-#     total_price = 0
-#     for price in prices:
-#         year = price.get('year')
-#         p = price.get('price')
-#         total_price = total_price + p
-#         print(f"Price({year}): Rs.{p}")
-#     avg_price = round((total_price / len(prices)), 2)
-#     print(f"Average Price: {avg_price}")
-#     print("-"*50)
+print("-"*50)
+for oil in oil_prices:
+    print(f"Oil Type: {oil.get('oil_type').capitalize()}")
+    prices = oil.get("prices")
+    total_price = 0
+    for price in prices:
+        year = price.get('year')
+        p = price.get('price')
+        total_price = total_price + p
+        print(f"Price({year}): Rs.{p}")
+    avg_price = round((total_price / len(prices)), 2)
+    print(f"Average Price: {avg_price}")
+    print("-"*50)
 
 students_score = [
     {"name": "Ram", "score": 80},
